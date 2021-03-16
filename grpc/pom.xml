@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>grpc</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+  <parent>
+    <groupId>org.example</groupId>
+    <artifactId>untitled</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <modules>
+<!--    <module>grpc-contract</module>-->
+<!--    <module>grpc-demo-simple</module>-->
+<!--    <module>grpc-demo-encryption</module>-->
+<!--    <module>grpc-demo-oneof</module>-->
+<!--    <module>grpc-demo-stream</module>-->
+<!--    <module>grpc-demo-interceptor</module>-->
+<!--    <module>grpc-demo-nameResolver</module>-->
+<!--    <module>grpc-demo-proxy</module>-->
+    <module>grpc-demo-simple</module>
+  </modules>
+
+<!--  <dependencies>-->
+<!--    <dependency>-->
+<!--      <groupId>io.grpc</groupId>-->
+<!--      <artifactId>grpc-netty-shaded</artifactId>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>io.grpc</groupId>-->
+<!--      <artifactId>grpc-protobuf</artifactId>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>io.grpc</groupId>-->
+<!--      <artifactId>grpc-stub</artifactId>-->
+<!--    </dependency>-->
+<!--  </dependencies>-->
+
+  <build>
+    <plugins>
+<!--      <plugin>-->
+<!--        <groupId>org.xolstice.maven.plugins</groupId>-->
+<!--        <artifactId>protobuf-maven-plugin</artifactId>-->
+<!--        <version>0.6.1</version>-->
+<!--        <configuration>-->
+<!--          <protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:${os.detected.classifier}</protocArtifact>-->
+<!--          <pluginId>grpc-java</pluginId>-->
+<!--          <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifier}</pluginArtifact>-->
+<!--          <protoSourceRoot>src/main/proto</protoSourceRoot>-->
+<!--        </configuration>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <goals>-->
+<!--              <goal>compile</goal>-->
+<!--              <goal>compile-custom</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--      </plugin>-->
+    </plugins>
+  </build>
+
+</project>
