@@ -22,6 +22,7 @@
     <module>java</module>
     <module>grpc</module>
     <module>protocol-buffer</module>
+    <module>serialization</module>
   </modules>
 
   <dependencyManagement>
