@@ -23,6 +23,7 @@
     <module>grpc</module>
     <module>protocol-buffer</module>
     <module>serialization</module>
+    <module>expression</module>
   </modules>
 
   <dependencyManagement>
