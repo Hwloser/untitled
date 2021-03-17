@@ -16,18 +16,19 @@
 
     <grpc.version>1.23.0</grpc.version>
     <protobuf.version>2.5.0</protobuf.version>
+    <aviator.version>5.2.4</aviator.version>
   </properties>
 
   <modules>
     <module>java</module>
     <module>grpc</module>
-    <module>protocol-buffer</module>
     <module>serialization</module>
     <module>expression</module>
   </modules>
 
   <dependencyManagement>
     <dependencies>
+      <!--grpc start-->
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-netty-shaded</artifactId>
@@ -43,6 +44,15 @@
         <artifactId>grpc-stub</artifactId>
         <version>${grpc.version}</version>
       </dependency>
+      <!--grpc end-->
+
+      <!-- expression start -->
+      <dependency>
+        <groupId>com.googlecode.aviator</groupId>
+        <artifactId>aviator</artifactId>
+        <version>${aviator.version}</version>
+      </dependency>
+      <!-- expression end -->
     </dependencies>
   </dependencyManagement>
 
