@@ -1,0 +1,9 @@
+
+let a = 10223372036854774807;   ## bigint iteral
+let b = 1000N;                  ## bigint
+let c = 1000;                   ## long
+
+
+println(a);
+println(b);
+println(c);

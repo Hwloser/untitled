@@ -1,0 +1,11 @@
+
+let a = 2M;     ## 以 M 结尾的浮点数将会被识别为 decimal
+let err = 1e-15M;
+let root = a;
+
+
+while math.abs(a - root * root) > err {
+  root = (a/root + root) / 2.0M;
+}
+
+println("square root of 2M is: " + root);
