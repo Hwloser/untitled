@@ -1,0 +1,8 @@
+
+p("ARGV count is:" + count(ARGV))
+
+for arg in ARGV {
+  p(arg);
+}
+
+p("ARGV[0] = " + ARGV[0]);
