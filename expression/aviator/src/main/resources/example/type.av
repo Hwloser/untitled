@@ -1,0 +1,20 @@
+
+## emample
+
+a = 1;
+println(type(a));
+
+s = "Hello AvaitorScript";
+println(type(s));
+
+let p = /(?i)hello\s+(.*)/;
+println(type(p));
+
+let dec = 100.00M;
+println(type(dec));
+
+if s =~ p {
+  println($0);
+  println($1);
+  println($2);
+}
