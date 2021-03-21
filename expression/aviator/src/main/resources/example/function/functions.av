@@ -1,0 +1,11 @@
+## example/function.av
+
+fn add(x,y) {
+  return x + y;
+}
+
+three = add(1,2);
+
+p('three = ' + three);
+
+p("string = " + add("huanwei","zhenbang"))
