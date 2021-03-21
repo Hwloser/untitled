@@ -1,4 +1,4 @@
-package com.hwloser.thread.and;
+package com.huanwei.thread.and;
 
 public class And {
 
