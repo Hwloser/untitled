@@ -1,4 +1,4 @@
-package com.hwloser.thread.loader;
+package com.huanwei.thread.loader;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -43,7 +43,7 @@ public class Loader {
 
   private void classGetConstructor()
       throws ClassNotFoundException, IllegalAccessException, InvocationTargetException, InstantiationException {
-    Class<?> clazz = Class.forName("com.hwloser.thread.loader.Loader");
+    Class<?> clazz = Class.forName("com.huanwei.thread.loader.Loader");
     Constructor<?>[] cs = clazz.getConstructors();
     for (Constructor<?> c : cs) {
       System.out.println(c);
@@ -58,18 +58,18 @@ public class Loader {
 
   private void classNewInstance()
       throws ClassNotFoundException, IllegalAccessException, InstantiationException {
-    Class<?> clazz = Class.forName("com.hwloser.thread.loader.Loader");
+    Class<?> clazz = Class.forName("com.huanwei.thread.loader.Loader");
     Loader loader = (Loader) clazz.newInstance();
     System.out.println(loader.age);
   }
 
   private void classGetSuperClass() throws Exception {
-    Class<?> clazz = Class.forName("com.hwloser.thread.loader.Loader");
+    Class<?> clazz = Class.forName("com.huanwei.thread.loader.Loader");
     System.out.println(clazz.getSuperclass());
   }
 
   private void classForName() throws ClassNotFoundException, IllegalAccessException {
-    Class<?> clazz = Class.forName("com.hwloser.thread.loader.Loader");
+    Class<?> clazz = Class.forName("com.huanwei.thread.loader.Loader");
     Field[] fields = clazz.getDeclaredFields();
     for (Field field : fields) {
       System.out.println(field);
@@ -93,14 +93,14 @@ public class Loader {
   }
 
   private void classGetName() throws ClassNotFoundException {
-    Class<?> clazz = Class.forName("com.hwloser.thread.loader.Loader");
+    Class<?> clazz = Class.forName("com.huanwei.thread.loader.Loader");
     System.out.println(clazz.getName());
     System.out.println(clazz.getCanonicalName());
     System.out.println(clazz.getSimpleName());
   }
 
   private void classGetClassloader() throws ClassNotFoundException {
-    Class<?> clazz = Class.forName("com.hwloser.thread.loader.Loader");
+    Class<?> clazz = Class.forName("com.huanwei.thread.loader.Loader");
     ClassLoader cl = clazz.getClassLoader();
     System.out.println(cl);
 
@@ -116,7 +116,7 @@ public class Loader {
   }
 
   private void classGetComponentType() throws Exception {
-    Class<?> clazz = Class.forName("com.hwloser.thread.loader.Loader");
+    Class<?> clazz = Class.forName("com.huanwei.thread.loader.Loader");
     Class<?> c = clazz.getComponentType();
     System.out.println(c);
 
