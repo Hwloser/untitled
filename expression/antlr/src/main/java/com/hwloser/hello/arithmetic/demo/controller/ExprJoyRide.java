@@ -1,4 +1,4 @@
-package com.hwloser.hello.arithmetic.demo;
+package com.hwloser.hello.arithmetic.demo.controller;
 
 import com.hwloser.hello.arithmetic.easy.prog.ExprLexer;
 import com.hwloser.hello.arithmetic.easy.prog.ExprParser;
