@@ -2,3 +2,6 @@
 target
 .idea
 
+*.class
+*.tokens
+*.interp
