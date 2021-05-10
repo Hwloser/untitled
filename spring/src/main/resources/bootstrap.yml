@@ -1,0 +1,46 @@
+##debug: true
+#spring:
+#  application:
+#    name: application
+#  cloud:
+#    nacos:
+#      config:
+#        # 通过设置 spring.cloud.nacos.config.enabled = false 来完全关闭 Spring Cloud Nacos Config
+#        enabled: true
+#        server-addr: https://nacos-prd.hypers.cc
+#        namespace: insight-test
+#        extension-configs:
+#          - data-id: cdp_test
+#            group: insight
+#        refresh-enabled: true
+#        file-extension: properties
+#      username: admin
+#      password: criusadmin
+#management:
+#  endpoint:
+#    nacosconfig:
+#      enabled: true
+
+
+spring:
+  application:
+    name: application
+  cloud:
+    nacos:
+      config:
+        # 通过设置 spring.cloud.nacos.config.enabled = false 来完全关闭 Spring Cloud Nacos Config
+        enabled: true
+        server-addr: http://10.16.100.7:8848
+        namespace: 4b352756-594c-4ea3-8775-c94fc4f7ddda
+        extension-configs:
+          - data-id: cdp_test.properties
+            group: insight
+        refresh-enabled: true
+        file-extension: properties
+      username: nacos
+      password: nacos
+management:
+  endpoint:
+    nacosconfig:
+      enabled: true
+debug: true

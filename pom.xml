@@ -25,6 +25,7 @@
     <module>serialization</module>
     <module>expression</module>
     <module>datasketches</module>
+    <module>spring</module>
   </modules>
 
   <dependencyManagement>
