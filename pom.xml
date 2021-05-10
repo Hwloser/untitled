@@ -26,6 +26,7 @@
     <module>expression</module>
     <module>datasketches</module>
     <module>spring</module>
+    <module>netty</module>
   </modules>
 
   <dependencyManagement>
