@@ -27,6 +27,7 @@
     <module>datasketches</module>
     <module>spring</module>
     <module>netty</module>
+    <module>scala</module>
   </modules>
 
   <dependencyManagement>
