@@ -7,6 +7,7 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
+import java.util.Iterator;
 import java.util.Set;
 
 public class NonBlockingEchoServer {
@@ -36,7 +37,6 @@ public class NonBlockingEchoServer {
       return;
     }
 
-    //noinspection InfiniteLoopStatement
     while (true) {
       try {
         selector.select();
@@ -45,7 +45,11 @@ public class NonBlockingEchoServer {
       }
 
       Set<SelectionKey> readyKeys = selector.selectedKeys();
-      for (SelectionKey readyKey : readyKeys) {
+      Iterator<SelectionKey> iterator = readyKeys.iterator();
+
+      while (iterator.hasNext()) {
+        SelectionKey readyKey = iterator.next();
+        iterator.remove();
         try {
           // 可连接
           if (readyKey.isAcceptable()) {
@@ -100,7 +104,6 @@ public class NonBlockingEchoServer {
           }
           e.printStackTrace();
         }
-
       }
 
     }
