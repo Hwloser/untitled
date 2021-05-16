@@ -17,6 +17,9 @@
     <grpc.version>1.23.0</grpc.version>
     <protobuf.version>2.5.0</protobuf.version>
     <aviator.version>5.2.4</aviator.version>
+    <antlr.version>4.9.1</antlr.version>
+
+    <lombok.version>1.18.20</lombok.version>
   </properties>
 
   <modules>
@@ -62,9 +65,17 @@
       <dependency>
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-runtime</artifactId>
-        <version>4.9.1</version>
+        <version>${antlr.version}</version>
       </dependency>
       <!-- antlr end -->
+
+      <!-- lombok -->
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+        <scope>provided</scope>
+      </dependency>
 
     </dependencies>
   </dependencyManagement>
