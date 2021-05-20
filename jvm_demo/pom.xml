@@ -11,6 +11,8 @@
 
   <artifactId>jvm_demo</artifactId>
 
+  <packaging>pom</packaging>
+
   <modules>
     <module>java</module>
     <module>scala</module>
