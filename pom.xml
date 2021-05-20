@@ -42,6 +42,7 @@
     <module>thrift</module>
     <module>algorithm</module>
     <module>python_demo</module>
+    <module>jvm_demo</module>
   </modules>
 
   <dependencies>
