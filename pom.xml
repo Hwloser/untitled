@@ -40,6 +40,7 @@
     <module>netty</module>
     <module>scala</module>
     <module>thrift</module>
+    <module>algorithm</module>
   </modules>
 
   <dependencies>
