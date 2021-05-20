@@ -9,12 +9,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>jvm_demo</artifactId>
-
-  <modules>
-    <module>java</module>
-    <module>scala</module>
-  </modules>
+  <artifactId>c_demo</artifactId>
 
   <properties>
     <maven.compiler.source>8</maven.compiler.source>

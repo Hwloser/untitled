@@ -31,18 +31,9 @@
   </properties>
 
   <modules>
-    <module>java</module>
-    <module>grpc</module>
-    <module>serialization</module>
-    <module>expression</module>
-    <module>datasketches</module>
-    <module>spring</module>
-    <module>netty</module>
-    <module>scala</module>
-    <module>thrift</module>
-    <module>algorithm</module>
     <module>python_demo</module>
     <module>jvm_demo</module>
+    <module>c_demo</module>
   </modules>
 
   <dependencies>
