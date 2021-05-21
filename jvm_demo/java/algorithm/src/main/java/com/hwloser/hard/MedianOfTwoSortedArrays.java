@@ -48,6 +48,7 @@ public class MedianOfTwoSortedArrays {
       int midIndex2 = totalLength / 2;
 
       double median1 = getKthElement(nums1, nums2, midIndex1 + 1);
+
       double median2 = getKthElement(nums1, nums2, midIndex2 + 1);
 
       return (median1 + median2) / 2.0;
