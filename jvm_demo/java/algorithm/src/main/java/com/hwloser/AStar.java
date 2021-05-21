@@ -8,6 +8,8 @@ public class AStar {
   public static void main(String[] args) {
     PointNode[][] map = constructRandomSquareMap(16);
     printMap(map);
+
+
   }
 
   public static void aStartAlgorithm(int[][] map) {
@@ -21,9 +23,9 @@ public class AStar {
   /**
    * 曼哈顿距离 -- 只允许上下左右四个方向移动
    *
-   * @param D    指的是相邻节点（node）之间的移动代价，通常是一个固定的常量
+   * @param D         指的是相邻节点（node）之间的移动代价，通常是一个固定的常量
    * @param pointNode 当前节点
-   * @param goal 目标节点
+   * @param goal      目标节点
    * @return 移动距离
    */
   private static double heuristic_1(double D, PointNode pointNode, PointNode goal) {
@@ -38,10 +40,10 @@ public class AStar {
    * 如果 所有节点都是正方形， D2的值就是 （√2 * D）
    * </p>
    *
-   * @param D    相邻节点直接的移动代价
-   * @param D2   指的是两个斜对角相邻节点之间的移动代价
+   * @param D         相邻节点直接的移动代价
+   * @param D2        指的是两个斜对角相邻节点之间的移动代价
    * @param pointNode 当前节点
-   * @param goal 目标节点
+   * @param goal      目标节点
    * @return 移动距离
    */
   private static double heuristic_2(double D, int D2, PointNode pointNode, PointNode goal) {
@@ -56,9 +58,9 @@ public class AStar {
    * 欧几里得距离指的是两节点之间的 直线距离 计算公式 √ ( ( p^(2.x) - p^(1.x))^2  + ( p^(2.y) - p^(1.y) )^2 )
    * </p>
    *
-   * @param D    相邻节点的移动代价
+   * @param D         相邻节点的移动代价
    * @param pointNode 当前节点
-   * @param goal 目标节点
+   * @param goal      目标节点
    * @return 移动距离
    */
   private static double heuristic_3(double D, PointNode pointNode, PointNode goal) {
@@ -71,11 +73,17 @@ public class AStar {
   private static void printMap(PointNode[][] map) {
     for (PointNode[] ints : map) {
       for (PointNode anInt : ints) {
-        System.out.print(anInt);
+        System.out.print(anInt.isObstacle() ? "X" : 0);
         System.out.print("\t");
       }
       System.out.println();
     }
+  }
+
+  private static PointNode[][] constructRandomSquareMapWithObstacle(int sideLength) {
+    PointNode[][] map = new PointNode[sideLength][sideLength];
+
+    return map;
   }
 
   private static PointNode[][] constructRandomSquareMap(int sideLength) {
@@ -107,6 +115,10 @@ public class AStar {
       this.x = x;
       this.y = y;
       this.cost = Integer.MAX_VALUE;
+    }
+
+    public boolean isObstacle() {
+      return trueValue != 0;
     }
 
     /**
