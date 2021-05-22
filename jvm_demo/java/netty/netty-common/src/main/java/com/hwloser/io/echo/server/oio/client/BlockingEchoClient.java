@@ -1,4 +1,4 @@
-package com.hwloser.io.oio.client;
+package com.hwloser.io.echo.server.oio.client;
 
 import java.io.IOException;
 import java.net.Socket;

@@ -1,4 +1,4 @@
-package com.hwloser.io.nio;
+package com.hwloser.io.echo.server.nio;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

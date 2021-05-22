@@ -1,4 +1,4 @@
-package com.hwloser.io.netty;
+package com.hwloser.io.echo.server.netty;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

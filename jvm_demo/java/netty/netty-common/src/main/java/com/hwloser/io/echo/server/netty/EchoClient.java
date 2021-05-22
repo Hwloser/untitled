@@ -1,4 +1,4 @@
-package com.hwloser.io.netty;
+package com.hwloser.io.echo.server.netty;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
