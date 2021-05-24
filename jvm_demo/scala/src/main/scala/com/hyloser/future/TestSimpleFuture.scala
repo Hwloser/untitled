@@ -18,9 +18,11 @@ object TestSimpleFuture {
   }
 
   private def testPromise = {
+    // promise 只能被完成一次, 再一次的调用
+    // 显示的调用 promise success 已经完成了当次 computation
+    // 再一次的calling会抛出 IllegalStateException
     Try {
-      TestUtils.setFunctionHeader("testPromise failure try")
-//      import scala.concurrent.ExecutionContext.Implicits.global
+      TestUtils.setFunctionHeader("testPromise failure try one")
       val promise = Promise[Int]()
 
       val a = promise success 1
@@ -33,7 +35,17 @@ object TestSimpleFuture {
     }
 
     Try {
+      TestUtils.setFunctionHeader("testPromise failure try two")
+      import scala.concurrent.ExecutionContext.Implicits.global
+      val promise = Promise[Int]()
+      promise failure new IllegalArgumentException("failure")
 
+      promise.future.onComplete {
+        case Failure(exception) => println(exception)
+        case Success(value) => println(value)
+      }
+
+      Await.result(promise.future, Duration.Inf)
     }
 
 
@@ -82,7 +94,11 @@ object TestSimpleFuture {
       TestUtils.setFunctionHeader("testFutureError")
       import scala.concurrent.ExecutionContext.Implicits.global
       val f = Future[Int] {
-        1 / 0
+        Try {
+          1 / 0
+        } match {
+          case Failure(exception) => throw new Exception(exception)
+        }
       }
 
       f.onComplete {
