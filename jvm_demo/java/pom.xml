@@ -21,6 +21,7 @@
     <module>test-example</module>
     <module>nio</module>
     <module>thread</module>
+    <module>timer</module>
   </modules>
 
   <artifactId>java</artifactId>
