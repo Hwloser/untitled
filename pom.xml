@@ -34,7 +34,6 @@
     <module>python_demo</module>
     <module>jvm_demo</module>
     <module>c_demo</module>
-      <module>go_demo</module>
   </modules>
 
   <dependencies>
