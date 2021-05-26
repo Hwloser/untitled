@@ -22,6 +22,7 @@
     <module>nio</module>
     <module>thread</module>
     <module>timer</module>
+    <module>guava</module>
   </modules>
 
   <artifactId>java</artifactId>
