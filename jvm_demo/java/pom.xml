@@ -24,6 +24,7 @@
     <module>timer</module>
     <module>guava</module>
     <module>caffeine</module>
+    <module>caffenine_demo</module>
   </modules>
 
   <artifactId>java</artifactId>
