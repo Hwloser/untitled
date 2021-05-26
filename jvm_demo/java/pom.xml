@@ -25,6 +25,7 @@
     <module>guava</module>
     <module>caffeine</module>
     <module>caffenine_demo</module>
+    <module>kafka</module>
   </modules>
 
   <artifactId>java</artifactId>
