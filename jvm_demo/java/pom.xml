@@ -26,6 +26,7 @@
     <module>caffeine</module>
     <module>caffenine_demo</module>
     <module>kafka</module>
+    <module>common-lang</module>
   </modules>
 
   <artifactId>java</artifactId>
