@@ -27,6 +27,7 @@
     <module>caffenine_demo</module>
     <module>kafka</module>
     <module>common-lang</module>
+    <module>hadoop</module>
   </modules>
 
   <artifactId>java</artifactId>
