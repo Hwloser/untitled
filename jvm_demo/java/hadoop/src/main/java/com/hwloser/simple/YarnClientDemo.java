@@ -7,21 +7,30 @@ import org.apache.hadoop.yarn.exceptions.YarnException;
 
 public class YarnClientDemo {
 
-  private static YarnClient yarnClient;
-
-  public static void main(String[] args) throws IOException, YarnException {
+  public static void main(String[] args) throws Exception {
     // 首先初始化和启动YarnClient
-    initYarnClient();
+    YarnClient yarnClient = initYarnClient();
 
-    yarnClient.getLabelsToNodes().forEach(System.out::printf);
+    applicationResponse(yarnClient);
+
   }
 
-  private static void initYarnClient() {
+  private static void applicationSubmissionContext(YarnClient yarn) {
+    
+  }
+
+  private static void applicationResponse(YarnClient yarn) throws IOException, YarnException {
+    System.out.println(yarn.getAllQueues());
+//    System.out.println(yarn.getResourceProfiles()); // current unable
+  }
+
+  private static YarnClient initYarnClient() {
     YarnConfiguration conf = new YarnConfiguration();
-    yarnClient = YarnClient.createYarnClient();
+    YarnClient yarnClient = YarnClient.createYarnClient();
     yarnClient.init(conf);
     yarnClient.start();
-
+    return yarnClient;
   }
 
 }
+

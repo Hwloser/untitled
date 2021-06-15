@@ -23,5 +23,9 @@ limitations under the License. See accompanying LICENSE file.
         <name>yarn.nodemanager.env-whitelist</name>
         <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
     </property>
+    <property>
+        <name>yarn.resourcemanager.address</name>
+        <value>192.168.0.102</value>
+    </property>
 
 </configuration>
