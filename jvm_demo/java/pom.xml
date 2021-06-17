@@ -28,6 +28,7 @@
     <module>kafka</module>
     <module>common-lang</module>
     <module>hadoop</module>
+    <module>log-framwork-module</module>
   </modules>
 
   <artifactId>java</artifactId>
