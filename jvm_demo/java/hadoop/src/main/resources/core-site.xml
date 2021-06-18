@@ -19,7 +19,7 @@ limitations under the License. See accompanying LICENSE file.
 <configuration>
     <property>
         <name>fs.defaultFS</name>
-        <value>hdfs://192.168.0.102:9000</value>
+        <value>hdfs://arch.linux.host:9000</value>
     </property>
 
     <property>  
