@@ -29,6 +29,7 @@
     <module>common-lang</module>
     <module>hadoop</module>
     <module>log-framwork-module</module>
+    <module>../../java/java_native</module>
   </modules>
 
   <artifactId>java</artifactId>
