@@ -33,6 +33,7 @@
     <module>bytecode_demo</module>
     <module>io_stream</module>
     <module>mysql</module>
+    <module>lock_demo</module>
   </modules>
 
   <artifactId>java</artifactId>
