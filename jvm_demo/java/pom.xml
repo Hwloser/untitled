@@ -32,6 +32,7 @@
     <module>../../java/java_native</module>
     <module>bytecode_demo</module>
     <module>io_stream</module>
+    <module>mysql</module>
   </modules>
 
   <artifactId>java</artifactId>
