@@ -31,6 +31,7 @@
     <module>log-framwork-module</module>
     <module>../../java/java_native</module>
     <module>bytecode_demo</module>
+    <module>io_stream</module>
   </modules>
 
   <artifactId>java</artifactId>
