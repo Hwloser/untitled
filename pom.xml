@@ -35,6 +35,7 @@
     <module>jvm_demo</module>
     <module>c_demo</module>
     <module>spark-demo</module>
+    <module>zookeeper</module>
   </modules>
 
   <dependencies>
