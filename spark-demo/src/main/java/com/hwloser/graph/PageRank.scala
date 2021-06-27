@@ -38,7 +38,7 @@ object PageRank {
     // page rank
 //    pageRankAlgorithm(originalFollowerGraph, users)
 
-
+    connectedComponents(originalFollowerGraph, users)
 
   }
 
@@ -52,8 +52,7 @@ object PageRank {
       .cache()
 
     logger.info("collect connected components graph")
-    cg
-      .triplets
+    cg.vertices
       .collect()
       .foreach(println)
 
