@@ -16,4 +16,12 @@
     <maven.compiler.target>8</maven.compiler.target>
   </properties>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala3-library_3</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+  </dependencies>
+
 </project>
