@@ -1,4 +1,4 @@
-package com.hwloser;
+package com.hwloser.nacos;
 
 import com.alibaba.nacos.api.annotation.NacosInjected;
 import com.alibaba.nacos.api.config.ConfigService;
