@@ -11,4 +11,11 @@ func main() {
 	var target_url = fmt.Sprintf(url, num, end_date)
 
 	println(target_url)
+
+	var a string = "huanwei"
+	fmt.Println(a)
+
+	var b, c int = 1, 2
+	fmt.Println(b, c)
+
 }
